@@ -1,0 +1,50 @@
+---
+title: 'Cara setup Github SSH'
+date: '2022-09-07'
+tags: ['github', 'ssh']
+draft: false
+summary: 'Supaya tidak login lagi menggunakan password. Dan bagaimana cara setup SSH.'
+---
+
+### Guide: Tentang SSH
+
+### SSH bukan :
+
+- bukan bahasa pemrograman
+- bukan terminal emulator
+
+### SSH adalah:
+
+- Secure Shell
+- Communication Protocol (seperti https, ftp dan sebagainya)
+- Bisa melakukan apa saja pada remote komputer, seperti: - Membuat file baru - Membuat folder baru - Install Program - Deploy web aplikasi - Setup web server
+  jadi ssh digunakan untuk login secara aman ke remote server.
+  pada saat kita mau terhubung ke server maka tugas ssh adalah sebagai client, nah agar bisa terhubung di server sana harus ada **SSHD**(Open SSH Daemon)
+
+### Adakah alternatif lain selain SSH ?
+
+ada desu. yaitu _telnet_ dan _rsh_ tetapi bedanya dia tidak terenkripsi
+
+### Ok jadi kenapa harus SSH ?
+
+its **secure**. its **encrypted**
+
+Kenapa harus pake ssh ? supaya tidak belibet masukan username saat push atau pull
+Sebelum membuat SSH baru cek dulu di komputer ada atau tidak dengan cara
+
+## caranya gimana sih?
+
+1. buka terminal
+2. ketikan perintah
+
+```bash
+	ls -al ~/.ssh
+	# maksud dari command di atas adalah cek apakah ada file di dalam .ssh folder
+```
+
+3. jika foldernya tidak kosong maka akan ada nama file seperti dibawah ini:
+
+- _id_rsa_ (tanpa extension artinya private)
+- _id_rsa.pub_ (pub artinya public)
+- _id_ecdsa.pub_
+- _id_ed25519.pub_

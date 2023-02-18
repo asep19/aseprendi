@@ -1,19 +1,27 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Blogr',
+    description: 'Simple Blog engine',
+    imgSrc: '/static/images/projects/blogr.png',
+    href: '/projects/blogr',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten handphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Crowfunding',
+    description: 'Crowfunding site like',
+    imgSrc: '/static/images/projects/crowfunding.png',
+    href: '/projects/crowfunding',
+  },
+  {
+    title: 'Myhijab Butik Store',
+    description: 'Online Store for Hijab.',
+    imgSrc: '/static/images/projects/myhijab.png',
+    href: '/projects/myhijab',
+  },
+  {
+    title: 'NFT Website',
+    description: 'NFT site',
+    imgSrc: '/static/images/projects/nft.png',
+    href: '/projects/nft',
   },
 ]
 
